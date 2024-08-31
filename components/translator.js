@@ -16,8 +16,8 @@ class Translator {
         const britishToAmericanSpelling = this.reverseObject(americanToBritishSpelling);
         const wordBritishSpelling = {...britishOnly, ...britishToAmericanSpelling };
         const britishToAmericanTitles = this.reverseObject(americanToBritishTitles);
-        const amerBritTitles = britishToAmericanTitles;
-        const translateAmer = this.translateTo(text, wordBritishSpelling, amerBritTitles);
+        const britAmerTitles = britishToAmericanTitles;
+        const translateAmer = this.translateTo(text, wordBritishSpelling, britAmerTitles);
         return translateAmer;
     }
     translateTo(text, wordSpelling, titles){
